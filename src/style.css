@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* desktop bg image */
+body {
+  background-image: url('../dist/images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* mobile bg image */
+@media (max-width: 570px) {
+  body {
+    background-image: url('../dist/images/bg-header-mobile.png');
+  }
+}
+
+/* custom css component */
+
+.section-container {
+  @apply max-w-6xl justify-center text-center items-center px-10 mx-auto;
+}
+
+@layer base {
+  h3 {
+    @apply text-4xl text-gray-600 font-bold mt-8 mb-8 md:text-5xl;
+  }
+}
